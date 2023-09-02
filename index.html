@@ -15,20 +15,45 @@
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">PORTFOLIO</a></li>
                 <li><a href="#">CONTACT</a></li>
+                <input id="Darkbtn" type="radio">
             </ul>
         </nav>
         <div class="detail">
-            <h1>It's Me Saurabh <span>Suman</span></h1>
+            <h1>It's Me Saurabh <span class="sec-text"></span></h1>
             <p>This is my Portfolio Website
             <br>Details and Work experience 
         </p>
-    <a href="#">Download CV</a>
+    <a href="Saurabh Resume.pdf">Download CV </a>
+
         </div>
         <div class="images">
-            <img src="background.png" class="shape" >
+           
             <img src="saurabh.png" class="boy">
 
         </div>
-    </div>
+    </div><script>
+    const text = document.querySelector(".sec-text");
+        const textLoad = () =>{
+            setTimeout(()=>{
+                text.textContent ="Suman";
+            },1000);
+            setTimeout(()=>{
+                text.textContent = "LEARN JAVA";
+            },4000);
+            setTimeout(()=>{
+                text.textContent = "LEARN PYTHON";
+            },8000);
+            setTimeout(()=>{
+                text.textContent = "LEARN HTML";
+            },12000);
+        }
+        textLoad();
+        setInterval(textLoad, 15000);
+
+        var button = document.getElementById("Darkbtn");
+        Darkbtn.addEventListener("click", ()=>{
+            document.body.classList.toggle("Darkmode");})
+       
+</script>
 </body>
 </html>
