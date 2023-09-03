@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js" integrity="sha512-64O4TSvYybbO2u06YzKDmZfLj/Tcr9+oorWhxzE3yDnmBRf7wvDgQweCzUf5pm2xYTgHMMyk5tW8kWU92JENng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="first">
         <nav>
-            <img src="ps28saurabh3dxx.png" class="logo">
+            <img src="logo.png"  class="logo">
             <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <input id="Darkbtn" type="radio">
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="achievement.html">ACHIVEMENTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <label class="switch">
+                <input id="Darkbtn" type="checkbox">
+                <span class="slider round"></span>
+            </label>
             </ul>
         </nav>
         <div class="detail">
@@ -24,6 +30,7 @@
             <br>Details and Work experience 
         </p>
     <a href="Saurabh Resume.pdf">Download CV </a>
+    
 
         </div>
         <div class="images">
@@ -31,7 +38,16 @@
             <img src="saurabh.png" class="boy">
 
         </div>
-    </div><script>
+    </div>
+    <div class="social">
+        <a href="https://wa.me/7294898872"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #3dfb09;"></i></a>
+        <a href="https://github.com/ssuman9489/SaurabhPortfolio.io.github"><i class="fa-brands fa-github  fa-2xl" style="color: #0d0d0d;"></i></a>
+        <a href="https://www.linkedin.com/in/saurabh-suman-b00928260"><i class="fa-brands fa-linkedin  fa-2xl " style="color: #40c2c4;"></i></a>
+        <a href="http://instagram.com/_u/saurabh2299suman"><i class="fa-brands fa-instagram  fa-2xl" style="color: #b330a1;"></i></a>
+        <a href="https://twitter.com/ssuman9489?t=BZEqlucXXnasIALD8LgaTQ&s=08"><i class="fa-brands fa-twitter  fa-2xl" style="color: #1c67fd;"></i></a>
+
+    </div>
+    <script>
     const text = document.querySelector(".sec-text");
         const textLoad = () =>{
             setTimeout(()=>{
