@@ -15,11 +15,12 @@ body{
 
 nav{
     display: flex;
-    width: 84%;
-    margin: auto;
+    width: 90%;
+    margin: .5%;
     padding: 20px 0;
-    align-items: center;
+    align-items: right;
     justify-content: space-between;
+    margin-left: 100px;
 }
 
 nav ul li{
@@ -35,7 +36,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: rgb(96, 7, 206);
+    color: rgb(111, 3, 244);
 }
 
 .detail{
@@ -101,3 +102,82 @@ button{
     border-radius: 4px;
 }
 
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 15px;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #efe4e4;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 1px;
+    bottom: 1px;
+    background-color: rgb(254, 248, 248);
+    -webkit-transition: .2s;
+    transition: .2s;
+
+}
+
+input:checked + .slider{
+    background-color: #060606;
+
+}
+input:focus + .slider{
+    box-shadow: 0 0 1px #09090a;
+} 
+
+input:checked + .slider:before{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+
+}
+
+.slider.round{
+    border-radius: 30px;
+
+}
+
+.slider.round:before{
+    border-radius: 50%;
+}
+.logo{
+    margin-top: 1%;
+    width: 200px;
+    margin-left: 30px;
+}
+
+.social {
+    margin-top: 15%;
+    justify-content: space-evenly;
+    width: 400px;
+
+}
+i{
+    padding: 10px;
+    width: 20px;
+   height: 50px; 
+}
