@@ -20,9 +20,20 @@ nav{
     padding: 20px 0;
     align-items: right;
     justify-content: space-between;
-    margin-left: 100px;
+    margin-left: 20px;
 }
-
+.checkbtn{
+    color: #09090a;
+    font-size: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    display: flex;
+    display: none;
+    
+}
+#check{
+    display: none;
+}
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -31,12 +42,14 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: black;
+    color: rgb(11, 137, 240);
     font-weight: bold;
+    
 }
 
 nav ul li a:hover{
-    color: rgb(111, 3, 244);
+    color: rgb(16, 8, 234);
+    font-size: large;
 }
 
 .detail{
@@ -81,10 +94,10 @@ span{
 }
 
 .images img{
-    height: 90%;
+    height: 50%;
     position: absolute;
     left: 305%;
-    bottom: 0;
+    
     transform: translateX(-50%);
     transition:bottom 1s, left 1s ;
 }
@@ -151,7 +164,7 @@ input:focus + .slider{
 } 
 
 input:checked + .slider:before{
-    -webkit-transform: translateX(26px);
+    -webkit-transform : translateX(26px);
     -ms-transform: translateX(26px);
 
 }
@@ -171,9 +184,9 @@ input:checked + .slider:before{
 }
 
 .social {
-    margin-top: 15%;
+    margin-top: 13%;
     justify-content: space-evenly;
-    width: 400px;
+    width: 500px;
 
 }
 i{
@@ -181,3 +194,114 @@ i{
     width: 20px;
    height: 50px; 
 }
+
+
+
+.call{
+    width: 30px;
+    margin: 10px;
+
+}
+.local{
+    margin-left: 260%;
+    display: flex;
+    margin-top: -70px;
+    justify-content: space-between;
+   
+    
+}
+
+
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    #check{
+        display: none;
+    }
+    
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 115%;
+}
+
+.images img{
+    height: 50%;
+    position: absolute;
+    left: 305%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    transition:bottom 1s, left 1s ;
+    display: none;
+}
+.detail{
+    margin-left: 2%;
+    margin-top: 13%;
+
+}
+
+.detail h1{
+    font-size: 40px;
+    color: rgb(11, 137, 240);
+    margin-bottom: 20px;
+}
+span{
+    color: orange;
+}
+
+.detail p{
+    color: #555;
+    line-height: 30px;
+
+}
+
+.detail a{
+    background: #212121;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+
+}
+ul{
+    position: fixed;
+    width: 100%;
+    height: 120vh;
+    top: 60px;
+    left: -100%;
+    background: #2b4f73;
+    text-align: center;
+    transition: all .5s;
+}
+nav ul li{
+    display: block;
+    list-style: none;
+    margin: 80px 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(3, 3, 232);
+    font-weight: bold;
+    
+}
+
+nav ul li a:hover{
+    color: rgb(16, 8, 234);
+    font-size: large;
+}
+#check:checked ~ ul{
+    left: 0;
+}
+}
+
+
+
+
+
